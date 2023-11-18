@@ -1,0 +1,8 @@
+opencv-python
+pdfminer3
+pdf2image
+openpyxl
+PyPDF2
+pandas
+pymupdf
+

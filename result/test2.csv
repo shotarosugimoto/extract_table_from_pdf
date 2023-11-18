@@ -1,0 +1,14 @@
+,光源,
+環境光,GLAMBIENT,拡散しており，方向を特定できない光（光のあたらない部分の色に相当）
+拡散光,GLDIFFUSE,特定の位置・方向から来る光（物体色に相当）
+鏡面光,GLSPECULAR,特定の方向から来る光が面で反射し跳ね返る光（ハイライトに相当）
+光源位置,GLPOSITION,光源の位置
+光源方向,GLSPOTDIRECTION,光源の方向
+輝度分布,GLSPOTEXPONENT,光源の輝度分布
+最大放射角度,GLSPOTCUTOFF,光源方向に対してどの程度の角度まで光を当てるか
+減衰率,"GLCONSTANTATTENUATION,GLLINEARATTENUATION,GLQUADRATICATTENUATION",光の減衰する程度
+,材質,
+環境光,GLAMBIENT,拡散しており，方向を特定できない光（光のあたらない部分の色に相当）
+拡散光,GLDIFFUSE,特定の位置・方向から来る光（物体色に相当）
+鏡面光,"GLSPECULAR,GLSHININESS",特定の方向から来る光が面で反射し跳ね返る光（ハイライトに相当）
+放射強度,GLEMISSION,面から発せられる光の強度
