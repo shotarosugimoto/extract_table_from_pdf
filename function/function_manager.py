@@ -21,7 +21,7 @@ class FunctionManager:
 
     def make_matrix(self):
         self.image_processor.tabel_detection()
-        # self.image_processor.image_view()
+        self.image_processor.image_view()
         self.image_processor.make_initial_matrix()
         self.pdf_processor.add_words_to_matrix(self.image_processor)
 

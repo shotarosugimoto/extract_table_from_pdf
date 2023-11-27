@@ -117,7 +117,7 @@ class PDFProcessor:
                             for char in span["chars"]:
                                 if char['c'] == ' ':
                                     continue
-                                if abs(check_x - char['bbox'][0]) > 5:
+                                if abs(check_x - char['bbox'][0]) > 3:
                                     self.word_table.loc[ii_index] = [
                                         page_num,
                                         char['c'],
@@ -131,6 +131,7 @@ class PDFProcessor:
                                     self.word_table.at[ii_index-1, 'word'] += char['c']
                                 check_x = char['bbox'][2]
         print(self.word_table)
+        # self.word_table.to_csv('word.csv')
         doc.close()
 
     def add_words_to_matrix(self, image_processor: ImageProcessor):
